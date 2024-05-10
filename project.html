@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('D:/Portfolio Project/projects/projectbg.jpg'); /* Replace 'background.jpg' with the path to your background image */
+            background-size: cover;
+            color: #333;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: darkolivegreen;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        .project {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            cursor: pointer;
+        }
+
+        .project-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .project:hover .overlay {
+            opacity: 1;
+        }
+
+        .project-details {
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 9999;
+            overflow: auto;
+        }
+
+        .popup-content {
+            position: relative;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 80%;
+            overflow: hidden;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PROJECTS</h1>
+    </header>
+
+    <div class="project" onclick="openPopup('project1')">
+        <img src="D:\Portfolio Project\projects\Big_Mart_1.png" alt="Big Mart Sales" class="project-image">
+        <div class="overlay">
+            <div class="project-details">
+                <h2>Predictive Analysis for Big Mart Sales Using Machine Learning Algorithms (Python)</h2>
+                <p>Implemented Linear and Ridge Regression algorithms to optimize sales strategies and enhance profitability. Identified key sales drivers through feature importance analysis.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="project" onclick="openPopup('project2')">
+        <img src="D:\Portfolio Project\projects\Bone_tumor_1.jpg" alt="Bone Tumor Detection" class="project-image">
+        <div class="overlay">
+            <div class="project-details">
+                <h2>Identifying Bone Tumor Using X-rays (Python)</h2>
+                <p>Developed CNN and SVM-based models to accurately diagnose bone tumors from X-ray images, improving diagnostic precision.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="project" onclick="openPopup('project4')">
+        <img src="D:\Portfolio Project\projects\netflix_1.png" alt="Netflix Replica" class="project-image">
+        <div class="overlay">
+            <div class="project-details">
+                <h2>Netflix Homepage Replica (HTML, CSS, JavaScript, Bootstrap)</h2>
+                <p>Created A Precise Replica Of The Netflix Homepage, Ensuring Fidelity To The Original Layout And User Interface.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="project" onclick="openPopup('project5')">
+        <img src="D:\Portfolio Project\projects\tableau_1.png" alt="Profit Visualization" class="project-image">
+        <div class="overlay">
+            <div class="project-details">
+                <h2>Profit Visualization Using Tableau (Kaggle)</h2>
+                <p>Designed And Developed Interactive Data Visualizations Illustrating Company Profits Over Time.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add other project sections similarly -->
+
+    <div class="popup" id="project1">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('project1')">&times;</span>
+            <h2>PREDICTIVE BIG MART SALES </h2>
+            <img src="D:\Portfolio Project\projects\Big_Mart_2.png" alt="Project 1 Image 1" style="width: 100%; margin-bottom: 10px;">
+            <img src="D:\Portfolio Project\projects\Big_mart_3.png" alt="Project 1 Image 2" style="width: 100%; margin-bottom: 10px;">
+            <img src="D:\Portfolio Project\projects\Big_Mart_4.png" alt="Project 1 Image 3" style="width: 100%;">
+        </div>
+    </div>
+
+    <div class="popup" id="project2">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('project2')">&times;</span>
+            <h2>Identifying Bone Tumor Using X-rays</h2>
+            <img src="D:\Portfolio Project\projects\Bone_Tumor-2.jpg" alt="Project 1 Image 1" style="width: 100%; margin-bottom: 10px;">
+            <img src="D:\Portfolio Project\projects\Bone_tumor_3.jpg" alt="Project 1 Image 2" style="width: 100%; margin-bottom: 10px;">
+            <img src="D:\Portfolio Project\projects\Bone_Tumor_4.jpg" alt="Project 1 Image 3" style="width: 100%; margin-bottom: 10px;">
+            <!-- Include images for project 2 -->
+        </div>
+    </div>
+
+    <div class="popup" id="project4">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('project4')">&times;</span>
+            <h2>Netflix Home Page Replica</h2>
+            <img src="D:\Portfolio Project\projects\netflix_2.png" alt="Project 1 Image 1" style="width: 100%; margin-bottom: 10px;">
+            <img src="D:\Portfolio Project\projects\netflix_3.png" alt="Project 1 Image 2" style="width: 100%; margin-bottom: 10px;">
+            
+        </div>
+    </div>
+
+    <div class="popup" id="project5">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('project5')">&times;</span>
+            <h2>Project Visualization Using Tableau</h2>
+            <img src="D:\Portfolio Project\projects\tableau_2.png" alt="Project 1 Image 1" style="width: 100%; margin-bottom: 10px;">
+            <img src="D:\Portfolio Project\projects\tableau_3.png" alt="Project 1 Image 2" style="width: 100%; margin-bottom: 10px;">
+    
+        </div>
+    </div>
+
+
+    <script>
+        function openPopup(id) {
+            document.getElementById(id).style.display = "block";
+        }
+
+        function closePopup(id) {
+            document.getElementById(id).style.display = "none";
+            window.location.href = 'project.html';
+        }
+    </script>
+</body>
+</html>

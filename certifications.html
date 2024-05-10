@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications</title>
+    <style>
+        body {
+        background-image: url('D:/Portfolio Project/Certifications/certificate_bg');
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        header {
+            background-color: darkolivegreen;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        .certificate {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            background-color:aqua;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .certificate:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .certificate-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .certificate-date {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .certificate-image {
+            display: none;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Certifications</h1>
+    </header>
+
+
+    <div class="certificate" onclick="toggleCertificate('cert3')">
+        <div class="certificate-title">Web Development, Bharat Intern</div>
+        <div class="certificate-date">(10 July, 2023)</div>
+        <img src="D:\Portfolio Project\Certifications\Machine Learning Bharat Intern.jpg" alt="Web Development Certificate" class="certificate-image" id="cert3">
+    </div>
+
+    <div class="certificate" onclick="toggleCertificate('cert4')">
+        <div class="certificate-title">Machine Learning, Bharat Intern</div>
+        <div class="certificate-date">(10 July, 2023)</div>
+        <img src="D:\Portfolio Project\Certifications\Machine Learning Bharat Intern.jpg" alt="Machine Learning Certificate" class="certificate-image" id="cert4">
+    </div>
+
+    <div class="certificate" onclick="toggleCertificate('cert6')">
+        <div class="certificate-title">JPMorgan Software Engineering Virtual Experience Program on Forage</div>
+        <div class="certificate-date">(September 2023)</div>
+        <img src="D:\Portfolio Project\Certifications\Forage.jpg" alt="JPMorgan Certificate" class="certificate-image" id="cert6">
+    </div>
+
+    <div class="certificate" onclick="toggleCertificate('cert7')">
+        <div class="certificate-title">SQL Basic, Hacker Rank</div>
+        <div class="certificate-date">(05 Nov, 2023)</div>
+        <img src="D:\Portfolio Project\Certifications\SQL Hackerrank.jpg" alt="SQL Basic Certificate" class="certificate-image" id="cert7">
+    </div>
+
+
+    <div class="certificate" onclick="toggleCertificate('cert9')">
+        <div class="certificate-title">Java Basic</div>
+        <div class="certificate-date">(06, Feb ,2024)</div>
+        <img src="D:\Portfolio Project\Certifications\Java Hacker rank.jpg" alt="Introduction to Java Certificate" class="certificate-image" id="cert9">
+    </div>
+    <div class="certificate" onclick="toggleCertificate('cert1')">
+        <div class="certificate-title">Python Essentials, Netcadd Academy</div>
+        <div class="certificate-date">(03 June, 2023)</div>
+        <img src="D:\Portfolio Project\Certifications\Python Essentials 2 Netcadd.jpg" alt="Python Essentials Certificate" class="certificate-image" id="cert1">
+    </div>
+
+    <div class="certificate" onclick="toggleCertificate('cert2')">
+        <div class="certificate-title">JavaScript Essentials, Netcadd Academy</div>
+        <div class="certificate-date">(06 June, 2023)</div>
+        <img src="D:\Portfolio Project\Certifications\JavaScript  Essentials 1 Netcadd.jpg" alt="JavaScript Essentials Certificate" class="certificate-image" id="cert2">
+    </div>
+
+    <div class="certificate" onclick="toggleCertificate('cert10')">
+        <div class="certificate-title">Python DataStructures</div>
+        <div class="certificate-date">(03 June, 2023)</div>
+        <img src="D:\Portfolio Project\Certifications\Python Data Structures Sololearn.jpg" alt="Python DataStructures Certificate" class="certificate-image" id="cert10">
+    </div>
+
+    <script>
+        function toggleCertificate(id) {
+            var certificateImage = document.getElementById(id);
+            var certificates = document.getElementsByClassName('certificate-image');
+            for (var i = 0; i < certificates.length; i++) {
+                if (certificates[i] !== certificateImage) {
+                    certificates[i].style.display = 'none';
+                }
+            }
+            if (certificateImage.style.display === 'block') {
+                certificateImage.style.display = 'none';
+            } else {
+                certificateImage.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
