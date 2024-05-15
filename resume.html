@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivas Mididhodi - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('D:/Portfolio Project/Resume/resume_bg.jpg'); /* Replace 'your-background-image.jpg' with your actual image path */
+            background-size: cover;
+            background-position: center;
+            color: #000; /* Change text color to black */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Add background color with transparency */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add box shadow for depth */
+        }
+        header {
+            ext-align: center;
+            font-size: 2rem; /* Set font size for the header */
+            margin-bottom: 20px; /* Add some space below the header */
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem; /* Set font size for the header */
+            margin-bottom: 20px; /* Add some space below the header */
+        }
+
+        .resume-container {
+            text-align: center;
+        }
+
+        .resume-container embed {
+            width: 100%;
+            height: 800px; /* Adjust height as needed */
+        }
+
+        .button-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .button-container button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            background-color: #007bff; /* Button background color */
+            color: #fff; /* Button text color */
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container button:hover {
+            background-color: #0056b3; /* Button background color on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header><h2>Nivas_Mididhodi_Resume</h2></header>
+        <div class="resume-container">
+            <embed src="D:\Portfolio Project\Resume\Nivas_Mididhodi_Resume.pdf" type="application/pdf" width="800" height="800">
+        </div>
+        <div class="button-container">
+            <a href="D:\Portfolio Project\Resume\Nivas_Mididhodi_Resume.pdf" download><button>Download</button></a>
+            <button onclick="window.print()">Print</button>
+        </div>
+    </div>
+</body>
+
+</html>
