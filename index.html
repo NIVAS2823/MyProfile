@@ -10,17 +10,17 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('computer-2982270_1280.jpg'); /* Add your image path here */
+            background-image: url('background-1747777_1280.jpg');
             background-size: cover;
-            background-position: center top 1cm; /* Adjust the vertical position */
-            color: #fff; /* Change text color to white */
+            background-position: center top 1cm;
+            color: #fff;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        header {
-            background-color: #007bff;
+        header, footer {
+            background-color: lightskyblue;
             color: #fff;
             text-align: center;
             padding: 1rem;
@@ -32,43 +32,36 @@
         header h1 {
             margin: 0;
             font-size: 2rem;
-
         }
 
-        header p {
+        header p, footer p {
             margin: 0;
             font-size: 1.2rem;
             margin-bottom: 10px;
         }
+
         .intro {
-    background-color:black;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px;
-    text-align: center;
-    margin-bottom: 10px;
-    text-decoration:dashed;
-    text-shadow: #fff;
-    font-display:unset;
-    text-shadow: crimson;
-}
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
 
-.intro-text {
-    font-size: 1.2rem;
-    color:black;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: inherit;
-    font-weight: 525;
-    font-display:initial;
-    text-decoration:dashed;
-    text-shadow: crimson;
-    font-display:unset;
-    text-overflow: ellipsis;
-}
-
+        .intro-text {
+            font-size: 1 rem;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: inherit;
+            font-weight: 525;
+            text-decoration: dashed;
+            text-shadow: crimson;
+            text-overflow: ellipsis;
+        }
 
         .sections {
-            font-family: 'Times New Roman', Times, serif; /* Set font to Times New Roman */
+            font-family: 'Times New Roman', Times, serif;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -79,9 +72,9 @@
         }
 
         section {
-            background-color: rgba(255, 255, 255, 0.8); /* Add background color with transparency */
+            background-color: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
-            width: calc(33.33% - 40px); /* Adjust width as needed */
+            width: calc(33.33% - 40px);
             box-sizing: border-box;
         }
 
@@ -93,24 +86,22 @@
 
         a {
             text-decoration: none;
-            color: blue; /* Change link color to white */
+            color: black;
             cursor: pointer;
         }
 
-        footer {
-            background-color: #007bff;
+        footer a {
             color: #fff;
-            text-align: center;
-            padding: 1rem;
-            width: 100%;
-            box-sizing: border-box;
-            margin-top: auto; /* Push footer to the bottom of the page */
-            font-size: 1.2rem; /* Increase font size */
-            margin-top: 20px; /* Slightly move the footer down */
         }
 
-        footer a {
-            color: #fff; /* Change link color to white */
+        @media screen and (max-width: 768px) {
+            .sections {
+                flex-direction: column;
+                align-items: center;
+            }
+            section {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -119,12 +110,12 @@
     <header>
         <h1>NIVAS MIDIDHODI</h1>
         <p>AI & ML Enthusiast | Software Engineering | Data Analysis</p>
-        <p class="intro-text">Highly motivated and enthusiastic computer science graduate, 
-            I bring a fervent passion for AI & ML, web development, and data analysis to the table. 
-            Eager to contribute in a dynamic and innovative setting, 
-            I thrive on challenges that push the boundaries of technology. 
-            With a relentless drive for excellence, 
-            I am poised to make meaningful contributions in any team environment. 
+        <p class="intro-text">Highly motivated and enthusiastic computer science graduate,
+            I bring a fervent passion for AI & ML, web development, and data analysis to the table.
+            Eager to contribute in a dynamic and innovative setting,
+            I thrive on challenges that push the boundaries of technology.
+            With a relentless drive for excellence,
+            I am poised to make meaningful contributions in any team environment.
             Let's collaborate and embark on a journey of innovation together.</p>
     </header>
 
@@ -135,26 +126,23 @@
         <section id="Experience">
             <h2><a href="experience.html">EXPERIENCE</a></h2>
         </section>
-
-
         <section id="skills">
             <h2><a href="skills.html">SKILLS</a></h2>
         </section>
-
         <section id="projects">
             <h2><a href="project.html">PROJECTS</a></h2>
         </section>
-
         <section id="certifications">
             <h2><a href="certifications.html">CERTIFICATIONS</a></h2>
         </section>
-
         <section id="research-interests">
             <h2><a href="interests.html">RESEARCH INTERESTS</a></h2>
         </section>
-
         <section id="hobbies">
             <h2><a href="hobbies.html">HOBBIES</a></h2>
+        </section>
+        <section id="resume">
+            <h2><a href="resume.html">RESUME</a></h2>
         </section>
         <section id="pictures">
             <h2><a href="pictures.html">PICTURES</a></h2>
